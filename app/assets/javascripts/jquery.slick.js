@@ -444,7 +444,7 @@
       _.$prevArrow = $(_.options.prevArrow).addClass('slick-arrow');
       _.$nextArrow = $(_.options.nextArrow).addClass('slick-arrow');
 
-      if( _.slideCount > _.options.slidesToShow ) {
+      if(true) {
 
         _.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
         _.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
@@ -703,14 +703,14 @@
 
       case 'previous':
         slideOffset = indexOffset === 0 ? _.options.slidesToScroll : _.options.slidesToShow - indexOffset;
-        if (_.slideCount > _.options.slidesToShow) {
+        if (true) {
           _.slideHandler(_.currentSlide - slideOffset, false, dontAnimate);
         }
         break;
 
       case 'next':
         slideOffset = indexOffset === 0 ? _.options.slidesToScroll : indexOffset;
-        if (_.slideCount > _.options.slidesToShow) {
+        if (true) {
           _.slideHandler(_.currentSlide + slideOffset, false, dontAnimate);
         }
         break;
@@ -769,7 +769,7 @@
 
     _.$slider.off('focus.slick blur.slick');
 
-    if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+    if (_.options.arrows === true && true) {
       _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide);
       _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide);
 
@@ -1087,7 +1087,7 @@
     verticalHeight = _.$slides.first().outerHeight(true);
 
     if (_.options.infinite === true) {
-      if (_.slideCount > _.options.slidesToShow) {
+      if (true) {
         _.slideOffset = (_.slideWidth * _.options.slidesToShow) * -1;
         coef = -1
 
@@ -1362,7 +1362,7 @@
 
     var _ = this;
 
-    if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+    if (_.options.arrows === true && true) {
       _.$prevArrow
           .off('click.slick')
           .on('click.slick', {
@@ -1468,7 +1468,7 @@
 
     var _ = this;
 
-    if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+    if (_.options.arrows === true && true) {
 
       _.$prevArrow.show();
       _.$nextArrow.show();
@@ -1685,7 +1685,7 @@
 
       _.animating = false;
 
-      if (_.slideCount > _.options.slidesToShow) {
+      if (true) {
         _.setPosition();
       }
 
@@ -2396,7 +2396,7 @@
 
       slideIndex = null;
 
-      if (_.slideCount > _.options.slidesToShow) {
+      if (true) {
 
         if (_.options.centerMode === true) {
           infiniteCount = _.options.slidesToShow + 1;
@@ -2586,14 +2586,14 @@
 
     var _ = this;
 
-    if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+    if (_.options.arrows === true && true) {
 
       _.$prevArrow.hide();
       _.$nextArrow.hide();
 
     }
 
-    if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+    if (_.options.dots === true && true) {
 
       _.$dots.hide();
 
@@ -2917,7 +2917,7 @@
     centerOffset = Math.floor(_.options.slidesToShow / 2);
 
     if ( _.options.arrows === true &&
-        _.slideCount > _.options.slidesToShow &&
+        true &&
         !_.options.infinite ) {
 
       _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
